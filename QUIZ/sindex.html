@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMVITM QUIZ</title>
+    <link rel="stylesheet" href="sindex.html">
+    <link  href="sstyle.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        button{
+            color:white;
+            background-color:  orangered;
+            font-weight: bolder;
+            padding:10px;
+        }
+        a{
+            background-color: transparent;
+        }
+        /* Add your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav2">
+            <div>
+                 <img src="logo.png"style="margin-top:10px;margin-left:10px" height="100">
+            </div>
+        </nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to the SMVITM Quiz</h1>
+        <p>Test your knowledge with our quiz! Answer multiple-choice questions on various topics.</p>
+        <div class="start">
+            <button id="start-button"><a href="register.html">Start Quiz</a></button>
+        </div>
+    </div>
+    <script>
+        // JavaScript code from your first HTML file goes here
+        // Remove any existing event listeners to prevent duplicates
+        document.getElementById("start-button").removeEventListener("click", startQuiz);
+
+        // Add event listener to the start button
+        document.getElementById("start-button").addEventListener("click", startQuiz);
+
+        // Function to redirect to the quiz page
+        function startQuiz() {
+            window.location.href = "quiz_page.html";
+        }
+    </script>
+</body>
+</html>
